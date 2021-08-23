@@ -1,0 +1,56 @@
+body {
+  background: #c7b39b url(cyber.jpg);               /* Цвет фона и путь к файлу   */
+  background-size: 100%;                            /* Растягиваем картинку       */
+  background-attachment: fixed
+}
+
+
+.cunteiner {
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(159, 159, 159, 0.63);
+}
+
+
+.cunteinerUnderOne {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding: 6px 6px 6px 6px;
+}
+
+
+.cunteinerUnderTwo {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 6px 6px 6px 6px;
+}
+
+.objectOne img {
+  border-radius: 10px;
+}
+
+.objectTwo {
+  font-family: Trebuchet MS;
+  font-size: 100px;
+}
+
+.cunteinerUnderThree {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+img.imgBottom {
+  border-radius: 10px;
+}
+
+img.imgBottom:hover {
+  opacity: 0.60;
+  -moz-transition: all 0.2s ease-in-out;
+  }
