@@ -1,5 +1,5 @@
 body {
-  background: #c7b39b url(cyber.jpg);               /* Цвет фона и путь к файлу   */
+  background: #0ddaf0 url(cyber.jpg);               /* Цвет фона и путь к файлу   */
   background-size: 100%;                            /* Растягиваем картинку       */
   background-attachment: fixed
 }
@@ -32,12 +32,10 @@ body {
 
 .objectOne img {
   border-radius: 10px;
+  max-width: 100%;
+  height: auto;
 }
 
-.objectTwo {
-  font-family: Trebuchet MS;
-  font-size: 100px;
-}
 
 .cunteinerUnderThree {
   display: flex;
@@ -46,11 +44,13 @@ body {
   justify-content: space-around;
 }
 
+
 img.imgBottom {
   border-radius: 10px;
 }
 
+
 img.imgBottom:hover {
   opacity: 0.60;
-  -moz-transition: all 0.2s ease-in-out;
-  }
+  transition: all 0.2s ease-in-out;
+}
