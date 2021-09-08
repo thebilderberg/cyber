@@ -1,47 +1,35 @@
 "use strict";
 
 
-function buttonClickOne() {
-  let clickOne = document.querySelector('.bottomClassOne');
-  clickOne.addEventListener('click', oneBotton);
+
+
+function textIncognitoIn(jango){
+  let textIncognito = document.querySelector(jango);
+  textIncognito.hidden = true;
 }
 
 
-function oneBotton() {
-  alert('Тут ничего нет');
-}
-
-
-function buttonClickTwo() {
-  let clickOne = document.querySelector('.bottomClassTwo');
-  clickOne.addEventListener('click', twoBotton);
-}
-function twoBotton() {
-  alert('Тут ничего нет');
-}
-
-
-function buttonClickThree() {
-  let clickOne = document.querySelector('.bottomClassThree');
-  clickOne.addEventListener('click', threeBotton);
-}
-function threeBotton() {
-  alert('Тут ничего нет');
-}
-
-
-function buttonClickFour() {
-  let clickOne = document.querySelector('.bottomClassFour');
-  clickOne.addEventListener('click', exitSms);
-}
-function exitSms() {
-  alert('Ты нащёл приключений на жопу, чумба!');
+function buttonClick(buttonClass, jangoNumber) {
+  let clickOne = document.querySelector(buttonClass);
+  clickOne.addEventListener('click', () => {
+    let textIncognito = document.querySelector(jangoNumber);
+    if (textIncognito.hidden === true) {
+      textIncognito.hidden = false;
+    } else {
+      textIncognito.hidden = true;
+    }
+  });
 }
 
 
 
 
-buttonClickOne();
-buttonClickTwo();
-buttonClickThree();
-buttonClickFour();
+
+textIncognitoIn('.jangoOne');
+textIncognitoIn('.jangoTwo');
+textIncognitoIn('.jangoThree');
+textIncognitoIn('.jangoFour');
+buttonClick('.bottomClassOne', '.jangoOne');
+buttonClick('.bottomClassTwo', '.jangoTwo');
+buttonClick('.bottomClassThree', '.jangoThree');
+buttonClick('.bottomClassFour', '.jangoFour');

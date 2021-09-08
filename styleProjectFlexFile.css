@@ -1,7 +1,7 @@
 body {
-  background: #0ddaf0 url(cyber.jpg);               /* Цвет фона и путь к файлу   */
+  background: #5b0581 url(cyber.jpg);               /* Цвет фона и путь к файлу   */
   background-size: 100%;                            /* Растягиваем картинку       */
-  background-attachment: fixed
+  background-attachment: fixed;
 }
 
 
@@ -44,9 +44,16 @@ body {
   justify-content: space-around;
 }
 
+.bottomClassOne, .bottomClassTwo, .bottomClassThree, .bottomClassFour {
+  padding: 0px 0px 0px 0px;
+  border-radius: 10px;
+  background-color: rgba(204, 204, 204, 0);
+}
+
 
 img.imgBottom {
   border-radius: 10px;
+  padding: 0px 0px 0px 0px;
 }
 
 
