@@ -46,6 +46,7 @@ body {
 
 .bottomClassOne, .bottomClassTwo, .bottomClassThree, .bottomClassFour {
   padding: 0px 0px 0px 0px;
+  border: 0;
   border-radius: 10px;
   background-color: rgba(204, 204, 204, 0);
 }
